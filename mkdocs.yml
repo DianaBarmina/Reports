@@ -1,0 +1,10 @@
+site_name: Отчет по лабораторным работам
+theme:
+  name: material
+nav:
+  - Лабораторная №1:
+      - models: lab1/models.md
+      - pydantic_models: lab1/pydantic_models.md
+      - authorization: lab1/authorization.md
+      - connection_db: lab1/connection_db.md
+      - main: lab1/main.md
