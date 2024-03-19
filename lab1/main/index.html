@@ -372,8 +372,7 @@
 
 <h1 id="_1">АПИ методы</h1>
 <p><strong>Для работы с пользователями</strong></p>
-<pre><code>
-@app.get(&quot;/users/me/&quot;, response_model=User)
+<pre><code>@app.get(&quot;/users/me/&quot;, response_model=User)
 def read_users_me(current_user: User = Depends(get_current_user), session=Depends(get_session)):
     return session.exec(select(Users).where(Users.id == current_user.id)).first()
 
